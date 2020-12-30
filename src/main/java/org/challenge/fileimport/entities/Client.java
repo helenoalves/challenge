@@ -1,3 +1,4 @@
+/* (C)2020 */
 package org.challenge.fileimport.entities;
 
 import lombok.AllArgsConstructor;
@@ -13,9 +14,8 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Client implements LineItem {
 
-    public static final String LINE_ID = "002";
-    private String cnpj;
-    private String name;
-    private String businessArea;
-
+  public static final String LINE_ID = "002";
+  private String cnpj;
+  private String name;
+  private String businessArea;
 }

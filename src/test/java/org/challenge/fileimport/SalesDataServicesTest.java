@@ -1,3 +1,4 @@
+/* (C)2020 */
 package org.challenge.fileimport;
 
 import java.math.BigDecimal;
@@ -10,17 +11,27 @@ import org.junit.Test;
 
 public class SalesDataServicesTest {
 
-  private List<SaleData> listOfSales = Arrays
-      .asList(SaleData.builder().saleId(3).salesmanName("Jonny")
-              .items(Arrays.asList(
-                  ItemData.builder().itemId(1).price(BigDecimal.TEN).quantity(1).build(),
-                  ItemData.builder().itemId(2).price(BigDecimal.TEN).quantity(1).build()
-              )).build(),
-          SaleData.builder().saleId(2).salesmanName("Bino")
-              .items(Arrays.asList(
-                  ItemData.builder().itemId(1).price(BigDecimal.valueOf(50.0)).quantity(1).build()
-              )).build());
-
+  private List<SaleData> listOfSales =
+      Arrays.asList(
+          SaleData.builder()
+              .saleId(3)
+              .salesmanName("Jonny")
+              .items(
+                  Arrays.asList(
+                      ItemData.builder().itemId(1).price(BigDecimal.TEN).quantity(1).build(),
+                      ItemData.builder().itemId(2).price(BigDecimal.TEN).quantity(1).build()))
+              .build(),
+          SaleData.builder()
+              .saleId(2)
+              .salesmanName("Bino")
+              .items(
+                  Arrays.asList(
+                      ItemData.builder()
+                          .itemId(1)
+                          .price(BigDecimal.valueOf(50.0))
+                          .quantity(1)
+                          .build()))
+              .build());
 
   @Test
   public void shouldReturnBinoMostExpensive() {

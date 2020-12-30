@@ -1,3 +1,4 @@
+/* (C)2020 */
 package org.challenge.fileimport.entities;
 
 import java.math.BigDecimal;
@@ -14,10 +15,9 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Salesman implements LineItem {
 
-    public static final String LINE_ID = "001";
+  public static final String LINE_ID = "001";
 
-    private String cpf;
-    private String name;
-    private BigDecimal salary;
-
+  private String cpf;
+  private String name;
+  private BigDecimal salary;
 }
