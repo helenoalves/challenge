@@ -26,6 +26,7 @@ Alguns pontos poderiam ser melhor explorados mas a restrição de prazo de dois 
 3. Fazer testes de erros e que não fossem happy path, fazer testes de edge cases.
 4. Externalizar propriedades de nomes de diretórios e arquivos e as classes de estratégia de conversão de linhas.
 5. Aumentar cobertura e integrar teste de cobertura ao código
+6. Melhorar o readme colocando uma tradução em inglês
 
 ### Contato
 ```
